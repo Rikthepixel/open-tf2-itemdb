@@ -1,0 +1,27 @@
+{
+  "name": "open-tf2-itemdb",
+  "version": "1.0.0",
+  "description": "An open-source item database for TF2",
+  "scripts": {
+    "dev": "tsx --env-file=.env.local ./src/entries/server.ts",
+    "dev:scheduler": "tsx --env-file=.env.local ./src/entries/scheduler.ts",
+    "dev:worker": "tsx --env-file=.env.local ./src/entries/worker.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "volta": {
+    "node": "22.11.0"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.4",
+    "bullmq": "^5.22.0",
+    "hono": "^4.6.8",
+    "linkedom": "^0.18.5",
+    "tsx": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.6"
+  }
+}
